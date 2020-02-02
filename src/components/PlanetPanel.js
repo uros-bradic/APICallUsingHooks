@@ -37,7 +37,7 @@ const PlanetList = function({
 const Planet = function({ planetDetails, onBackClick }) {
   return (
     <div>
-      <h3>This is planet {planetDetails[0].name} description</h3>
+      <h3>Planet {planetDetails[0].name}</h3>
       <div>
         <p>
           Back to
@@ -93,8 +93,6 @@ export const PlanetPanel = function PlanetPanel(props) {
   const planetDetails = planetList.results
     ? planetList.results.filter(pl => pl.name === planet)
     : null;
-  console.log(planetDetails);
-  console.log(planet);
 
   return (
     <React.Fragment>

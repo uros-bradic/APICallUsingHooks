@@ -55,7 +55,6 @@ export const Container = function Container(props) {
     }
     fetchData();
   }, [requestUrl]); // Or [] if effect doesn't need props or state
-  console.log(planetList);
 
   return (
     <div>
