@@ -16,7 +16,7 @@ export const PlanetsContainer = function PlanetsContainer(props) {
   return (
     <React.Fragment>
       {isLoading ? (
-        <div className="loader">Your results are loading</div>
+        <div className="loader">Loading results</div>
       ) : (
         <PlanetPanel
           planet={planet}

@@ -45,7 +45,9 @@ export const Container = function Container(props) {
         setPlanetList(planets);
         if (!planets.previous) setHasPrevious(false);
         if (!planets.next) setHasNext(false);
-        setIsLoading(false);
+        setTimeout(() => {
+          setIsLoading(false);
+        }, 1000);
       } catch {
         setHasErrors(true);
         setIsLoading(false);
